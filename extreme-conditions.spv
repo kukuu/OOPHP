@@ -1,0 +1,45 @@
+<~inherit none>
+<?  $this->common = self::view('/forecast/_common.spv', array('view' => $this)); ?>
+<div class="extremes">
+	<? foreach ($this->view->extremes as $type => $extreme): ?>
+		<? if (isset($extreme["data"])): ?>
+		<div class="extreme type-<?= $type ?>">
+			<h2><?= $extreme["title"] ?></h2>
+			<ol>
+			<? foreach ($extreme["data"] as $index => $location): ?>
+			    <? $rowNumber = $index + 1; ?>
+				<li class="item-<?= $rowNumber ?>">
+				    <span class="index"><?= $rowNumber ?></span>
+					<h3><?= $location->name ?></h3>
+					<?
+						if (isset($location->temperature)) {
+							$this->temp($location);
+						} else {
+							$this->wind($location);
+						}
+					?>
+				</li>
+			<? endforeach; ?>
+			</ol>
+		</div>
+		<? endif ?>
+	<? endforeach; ?>
+</div>
+
+<~method temp($location)>
+<?
+	$forecast = new stdClass();
+	$forecast->temperatureC = $location->temperature->C;
+	$forecast->temperatureF = $location->temperature->F;
+	$this->common->singleTemperature($forecast);
+?>
+</~method>
+
+<~method wind($location)>
+<?
+	$forecast = new stdClass();
+	$forecast->windSpeedMph = $location->wind->windSpeedMph;
+	$forecast->windSpeedKph = $location->wind->windSpeedKph;
+	$this->common->windSpeed($forecast);
+?>
+</~method>

@@ -1,0 +1,32 @@
+<library>
+	<book>
+		<Title>Pro PHP</Title>
+		<Author>Kevin McArthur</Author>
+		<Picture>KM</Picture>
+		<Summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, suscipit quis rhoncus vitae, ullamcorper sed ante. Nam et neque ac arcu mattis porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer nec purus sed est commodo pellentesque a non tellus. Sed turpis mauris, aliquam condimentum vehicula a, auctor et nisl. Maecenas condimentum vulputate porttitor. Nullam vehicula porta eros, in fermentum lacus tristique eu. In hac habitasse platea dictumst. Cras odio justo, dictum ut tincidunt ut, semper eget quam.</Summary>
+	</book>
+	<book>
+		<Title>Introducing HTML5</Title>
+		<Author> Bruce Lawson and Remy Sharp</Author>
+		<Picture>BL / RS</Picture>
+		<Summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, suscipit quis rhoncus vitae, ullamcorper sed ante. Nam et neque ac arcu mattis porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer nec purus sed est commodo pellentesque a non tellus. Sed turpis mauris, aliquam condimentum vehicula a, auctor et nisl. Maecenas condimentum vulputate porttitor. Nullam vehicula porta eros, in fermentum lacus tristique eu. In hac habitasse platea dictumst. Cras odio justo, dictum ut tincidunt ut, semper eget quam.</Summary>
+	</book>
+	<book>
+		<Title>Introducing Python</Title>
+		<Author> ???????/</Author>
+		<Picture>3</Picture>
+		<Summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, suscipit quis rhoncus vitae, ullamcorper sed ante. Nam et neque ac arcu mattis porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer nec purus sed est commodo pellentesque a non tellus. Sed turpis mauris, aliquam condimentum vehicula a, auctor et nisl. Maecenas condimentum vulputate porttitor. Nullam vehicula porta eros, in fermentum lacus tristique eu. In hac habitasse platea dictumst. Cras odio justo, dictum ut tincidunt ut, semper eget quam.</Summary>
+	</book>
+	<book>
+		<Title>Introducing Ruby</Title>
+		<Author> ???????/</Author>
+		<Picture>4</Picture>
+		<Summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, suscipit quis rhoncus vitae, ullamcorper sed ante. Nam et neque ac arcu mattis porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer nec purus sed est commodo pellentesque a non tellus. Sed turpis mauris, aliquam condimentum vehicula a, auctor et nisl. Maecenas condimentum vulputate porttitor. Nullam vehicula porta eros, in fermentum lacus tristique eu. In hac habitasse platea dictumst. Cras odio justo, dictum ut tincidunt ut, semper eget quam.</Summary>
+	</book>
+	<book>
+		<Title>Introducing C#</Title>
+		<Author> ???????/</Author>
+		<Picture>5</Picture>
+		<Summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, suscipit quis rhoncus vitae, ullamcorper sed ante. Nam et neque ac arcu mattis porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer nec purus sed est commodo pellentesque a non tellus. Sed turpis mauris, aliquam condimentum vehicula a, auctor et nisl. Maecenas condimentum vulputate porttitor. Nullam vehicula porta eros, in fermentum lacus tristique eu. In hac habitasse platea dictumst. Cras odio justo, dictum ut tincidunt ut, semper eget quam.</Summary>
+	</book>
+</library>

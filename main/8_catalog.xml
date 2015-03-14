@@ -1,0 +1,289 @@
+
+<catalog>
+  <cd>
+    <title>Empire Burlesque</title>
+    <artist>Bob Dylan</artist>
+    <hobby>Partying</hobby>
+    <star>Capricon</star>
+    <country>USA</country>
+    <company>Columbia</company>
+    <price>10.90</price>
+    <year>1985</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Hide your heart</title>
+    <artist>Bonnie Tyler</artist>
+    <hobby>Partying</hobby>
+    <star>Cancer</star>
+    <country>UK</country>
+    <company>CBS Records</company>
+    <price>9.90</price>
+    <year>1988</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Greatest Hits</title>
+    <artist>Dolly Parton</artist>
+    <hobby>Swimming</hobby>
+    <star>Jupiter</star>
+    <country>USA</country>
+    <company>RCA</company>
+    <price>9.90</price>
+    <year>1982</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Still got the blues</title>
+    <artist>Gary Moore</artist>
+    <hobby>footie</hobby>
+    <star>Sagitarius</star>
+    <country>UK</country>
+    <company>Virgin records</company>
+    <price>10.20</price>
+    <year>1990</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Eros</title>
+    <artist>Eros Ramazzotti</artist>
+    <hobby>fottie</hobby>
+    <star>Venus</star>
+    <country>EU</country>
+    <company>BMG</company>
+    <price>9.90</price>
+    <year>1997</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>One night only</title>
+    <artist>Bee Gees</artist>
+    <hobby>Swimming</hobby>
+    <star>Cancer</star>
+    <country>UK</country>
+    <company>Polydor</company>
+    <price>10.90</price>
+    <year>1998</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Sylvias Mother</title>
+    <artist>Dr.Hook</artist>
+    <hobby>Swimming</hobby>
+    <star>Batmington</star>
+    <country>UK</country>
+    <company>CBS</company>
+    <price>8.10</price>
+    <year>1973</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Maggie May</title>
+    <artist>Rod Stewart</artist>
+    <hobby>Footie</hobby>
+    <star>Sagitarius</star>
+    <country>UK</country>
+    <company>Pickwick</company>
+    <price>8.50</price>
+    <year>1990</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Romanza</title>
+    <artist>Andrea Bocelli</artist>
+    <hobby>Walking</hobby>
+    <star>Capricon</star>
+    <country>EU</country>
+    <company>Polydor</company>
+    <price>10.80</price>
+    <year>1996</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>When a man loves a woman</title>
+    <artist>Percy Sledge</artist>
+    <hobby>Batmington</hobby>
+    <star>Jupiter</star>
+    <country>USA</country>
+    <company>Atlantic</company>
+    <price>8.70</price>
+    <year>1987</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Black angel</title>
+    <artist>Savage Rose</artist>
+    <hobby>Partying</hobby>
+    <star>Venus</star>
+    <country>EU</country>
+    <company>Mega</company>
+    <price>10.90</price>
+    <year>1995</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>1999 Grammy Nominees</title>
+    <artist>Many</artist>
+    <hobby>Car Racing</hobby>
+    <star>Capricon</star>
+    <country>USA</country>
+    <company>Grammy</company>
+    <price>10.20</price>
+    <year>1999</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>For the good times</title>
+    <artist>Kenny Rogers</artist>
+    <hobby>Car Racing</hobby>
+    <star>Cancer</star>
+    <country>UK</country>
+    <company>Mucik Master</company>
+    <price>8.70</price>
+    <year>1995</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Big Willie style</title>
+    <artist>Will Smith</artist>
+    <hobby>Golf</hobby>
+    <star>Venus</star>
+    <country>USA</country>
+    <company>Columbia</company>
+    <price>9.90</price>
+    <year>1997</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Tupelo Honey</title>
+    <artist>Van Morrison</artist>
+    <hobby>Golf</hobby>
+    <star>Venus</star>
+    <country>UK</country>
+    <company>Polydor</company>
+    <price>8.20</price>
+    <year>1971</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Soulsville</title>
+    <artist>Jorn Hoel</artist>
+    <hobby>Golf</hobby>
+    <star>Jupiter</star>
+    <country>Norway</country>
+    <company>WEA</company>
+    <price>7.90</price>
+    <year>1996</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>The very best of</title>
+    <artist>Cat Stevens</artist>
+    <hobby>Surfing</hobby>
+    <star>Venus</star>
+    <country>UK</country>
+    <company>Island</company>
+    <price>8.90</price>
+    <year>1990</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Stop</title>
+    <artist>Sam Brown</artist>
+    <hobby>Surfing</hobby>
+    <star>Jupiter</star>
+    <country>UK</country>
+    <company>A and M</company>
+    <price>8.90</price>
+    <year>1988</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Bridge of Spies</title>
+    <artist>T'Pau</artist>
+    <hobby>Surfiing</hobby>
+    <star>Cancer</star>
+    <country>UK</country>
+    <company>Siren</company>
+    <price>7.90</price>
+    <year>1987</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Private Dancer</title>
+    <artist>Tina Turner</artist>
+    <hobby>Shoping</hobby>
+    <star>Cancer</star>
+    <country>UK</country>
+    <company>Capitol</company>
+    <price>8.90</price>
+    <year>1983</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Midt om natten</title>
+    <artist>Kim Larsen</artist>
+    <hobby>Shoping</hobby>
+    <star>Sagitarius</star>
+    <country>EU</country>
+    <company>Medley</company>
+    <price>7.80</price>
+    <year>1983</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Pavarotti Gala Concert</title>
+    <artist>Luciano Pavarotti</artist>
+    <hobby>Shoping</hobby>
+    <star>Jupiter</star>
+    <country>UK</country>
+    <company>DECCA</company>
+    <price>9.90</price>
+    <year>1991</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>The dock of the bay</title>
+    <artist>Otis Redding</artist>
+    <hobby>Gambling</hobby>
+    <star>Cancer</star>
+    <country>USA</country>
+    <company>Atlantic</company>
+    <price>7.90</price>
+    <year>1987</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Picture book</title>
+    <artist>Simply Red</artist>
+    <hobby>Gambling</hobby>
+    <star>Jupiter</star>
+    <country>EU</country>
+    <company>Elektra</company>
+    <price>7.20</price>
+    <year>1985</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Red</title>
+    <artist>The Communards</artist>
+    <hobby>Gambling</hobby>
+    <star>Capricon</star>
+    <country>UK</country>
+    <company>London</company>
+    <price>7.80</price>
+    <year>1987</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+  <cd>
+    <title>Unchain my heart</title>
+    <artist>Joe Cocker</artist>
+    <hobby>Gambling</hobby>
+    <star>Cancer</star>
+    <country>USA</country>
+    <company>EMI</company>
+    <price>8.20</price>
+    <year>1987</year>
+	<picture location="bones.jpg" text="This is my picture"/>
+  </cd>
+</catalog>
