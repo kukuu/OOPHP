@@ -6,7 +6,7 @@
 
 <~method newsPageJavaScript>
     require(['module/nav/nav', 'vendor/ender/qwery-mobile', 'module/transclude', 'module/tabbed/tabbed', 'domReady!'], function( Nav, $, Transclude, Tabbed ) {
-        var n = new Nav(),
+        var n = new Nav( ),
             ts = new Transclude();
 
         ts.get('.fetch', {
