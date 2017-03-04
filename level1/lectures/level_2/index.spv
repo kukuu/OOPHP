@@ -1,0 +1,101 @@
+<~inherit /layout/base.spv>
+
+<?
+    $storyDigest = self::view('/includes/storyUnit.spv');
+?>
+
+<~method newsPageJavaScript>
+    require(['module/nav/nav', 'vendor/ender/qwery-mobile', 'module/transclude', 'module/tabbed/tabbed', 'domReady!'], function( Nav, $, Transclude, Tabbed ) {
+        var n = new Nav(),
+            ts = new Transclude();
+
+        ts.get('.fetch', {
+            target: '.panel-2 #most-popular-placeholder',
+            complete: function() {
+                var t = new Tabbed($('#index-tabs li'), $('#index-panels .panel'));
+            }
+        });
+
+    });
+</~method>
+
+<~method newsMetaSection>
+    <meta name="Section" content="<?= $this->index->getSectionId()?>">
+    <meta name="Section-Path" content="<?= $this->index->getSectionPath()?>">
+</~method>
+
+<div id="page" class="index">
+
+    <? if ($this->isFrontpage): ?>
+    <div class="container c-solid">
+        <div class="inner">
+           <div id="index-tabs" class="tabs">
+            <ul>
+                <li class="tab-1 open"><a href="/news">Top Stories</a>
+                <li class="tab-2"><a href="/news/popular/read" class="fetch">Popular</a>
+            </ul>
+           </div>
+        </div> <!-- /inner -->
+    </div> <!-- / .container -->
+    <? endif ?>
+
+    <? if ($this->isFrontpage): ?>
+       <div id="index-panels" class="panels">
+        <div class="panel panel-1 open">
+    <? endif ?>
+
+    <div class="container c-open">
+
+        <? if ($this->index->hasGroup('container-top-stories')): ?>
+
+            <? $topStories = $this->index->getGroup('container-top-stories') ?>
+
+            <section id="top-stories" class="top-stories">
+                <div class="top-stories-inner">
+
+                    <h2><?= $topStories['title']?></h2>
+
+                    <div class="article-wrapper">
+
+                    <? foreach ($this->index->getGroup('container-top-stories')->getStories() as $story): ?>
+                        <? $storyDigest->render($story) ?>
+                    <? endforeach; ?>
+
+                    </div> <!-- / .article-wrapper -->
+
+                </div> <!-- / .inner -->
+            </section> <!-- / .top-stories -->
+
+        <? endif ?>
+
+    </div> <!-- / .container -->
+    <div class="container c-solid">
+        <div class="inner">
+
+        <? if($this->index->hasGroup('features-and-analysis')): ?>
+
+            <? self::view('/includes/storyList.spv')->render(
+                $this->index->getGroup('features-and-analysis'),
+                'full')
+            ?>
+
+        <? endif; ?>
+
+        </div> <!-- /inner -->
+    </div> <!-- / .container -->
+
+    <? if ($this->isFrontpage): ?> <!-- / .panel-1 -->
+        </div>
+        <div class="panel panel-2">
+                <div id="container-1" class="container c-open">
+                <div id="most-popular-placeholder">
+    <? endif ?>
+
+    <? if ($this->isFrontpage): ?> <!-- / #index-panels -->
+                </div> <!-- / #most-popular-placeholder -->
+            </div> <!-- / #container-1 -->
+        </div> <!-- / .panel-2 -->
+       </div> <!-- / #index-panels -->
+    <? endif ?>
+
+</div> <!-- / #page -->

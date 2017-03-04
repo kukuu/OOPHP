@@ -1,0 +1,104 @@
+
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>LoveliFolk Home Page - eCommerce</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name="viewport" content="Alexander Adu-Sarkodie,Responsive Design, eCommerce, , Add to basket, Flexible Grid, Media Queries, Media Query Listeners, HTML5" />
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+	 <script src="js/lib/modernizr-2.5.3.min.js"></script>
+	 <script src="js/simpleCart.js"></script>
+	 <script type="text/javascript">
+		simpleCart = new cart("lovelifolk");//Create a Lovelifolk instance (cart Object)
+	</script>
+	 	
+</head>
+<body id="home">
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <section>
+        <div id="page">        
+				<header>		
+                	<div class="lede">
+						<h1><img src="images/logo.jpg" width="275" height="49" alt="LoveliFolk" border="0"></h1>
+						<div class="settings">
+							<ul>
+								<li>Home</li>
+								<li><a href="#">SHOP</a></li>
+								<li><a href="#">ABOUT</a></li>
+								<li class="last"><a href="#">CONTACT</a></li>
+							</ul>
+							<span class="basket"></span>
+							<span class="items simpleCart_items"></span>
+							<a href="#" class="simpleCart_empty">empty cart</a>	
+						</div>
+					</div>
+					</header>
+                    <article>
+                        <div class="splash">
+							<img src="images/splash.jpg" width="904" height="298" alt="Lovelifolk" border="0">
+                      </div>
+                	</article>
+					<article>
+                        <div class="strapline">
+							<div class="left-col">
+							<h2 class="label-text featured">Featured products</h2>
+								<ul>
+								<!-- item -->
+									<li>
+										<div class="product"><img src="images/green.jpg" width="70" height="71" alt="Green top" border="0">
+											<div class="addto-basket">
+												<a href="#" onclick="simpleCart.add('name=Green top','price=90');return false;"><span class="basket"></span>
+												<span class="addto-text">Add to <br />basket</span></a>
+											</div>
+										</div>
+										<div class="summary"><h3>Green Shirt</h3><p>Lorem ipsum dolor sit amet consecteur adispiscing elit sed du eismod tempor incidudunt ut labore et dolore magna aliqua.</p></div>
+									</li>
+								<!-- item -->
+									<li>
+										<div class="product"><img src="images/red.jpg" width="69" height="70" alt="Red top" border="0">
+											<div class="addto-basket">
+																<a href="#" onclick="simpleCart.add('name=Red top','price=60');return false;"><span class="basket"></span>
+												<span class="addto-text">Add to <br />basket</span></a>
+											</div>
+										</div>
+										<div class="summary"><h3>Red Shirt</h3><p>Lorem ipsum dolor sit amet consecteur adispiscing elit sed du eismod tempor incidudunt ut labore et dolore magna aliqua.</p></div>
+									</li>
+									<!-- item -->
+									<li>
+										<div class="product"><img src="images/blue.jpg" width="71" height="71" alt="Blue top" border="0">
+											<div class="addto-basket">
+												<a href="#" onclick="simpleCart.add('name=blue top','price=30');return false;"><span class="basket"></span>
+												<span class="addto-text">Add to <br />basket</span></a>
+											</div>
+										</div>
+										<div class="summary"><h3>Blue Shirt</h3><p>Lorem ipsum dolor sit amet consecteur adispiscing elit sed du eismod tempor incidudunt ut labore et dolore magna aliqua.</p></div>
+									</li>
+								</ul> 
+								<!-- 1 -->
+							</div>
+							<div class="middle-col">
+								<img src="images/mens.jpg" width="286" height="287" alt="Men's" border="0">
+								<h2 class="label-text">Mens</h2>
+								<p class="summary-text">Lorem ipsum dolor sit amet consecteur adispiscing elit sed du eismod tempor incidudunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+								
+							</div>
+							<div class="right-col">
+								<img src="images/ladies.jpg" width="287" height="287" alt="Ladies" border="0">
+								<h2 class="label-text">Accessories for......</h2>
+								<p class="summary-text">Lorem ipsum dolor sit amet consecteur adispiscing elit sed du eismod tempor incidudunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+							</div>
+                      </div>
+                	</article>
+        </div>      
+    </section>
+	<!--footer-->
+    <footer>
+			<div class="main-footer">
+                <p><span class="join-us">Join us</span><img src="images/facebook.jpg" width="119" height="28" alt="Join us on Facebook" border="0"></p>
+			</div>
+	</footer>
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/lib/jquery-1.7.1.min.js"><\/script>')</script>
+</body>
+</html>

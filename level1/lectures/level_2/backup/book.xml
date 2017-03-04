@@ -1,0 +1,14 @@
+<books>
+  <book>
+    <title>The Grapes of Wrath</title>
+    <author>John Steinbeck</author>
+	<picture location="bones.jpg"  href="http://www.itv.com/" border="0" alt="This is my picture"/>
+	<website href="http://www.codeunique.com/" text="Codeunique"/>
+  </book>
+  <book>
+    <title>The Pearl</title>
+    <author>John Steinbeck</author>
+	<picture location="bones2.jpg"  href="http://www.itv.com/" border="0" alt="This is my picture"/>
+	<website href="http://www.codeunique.com/" text="Codeunique"/>
+  </book>
+</books> 

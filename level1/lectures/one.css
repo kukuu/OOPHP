@@ -1,0 +1,21 @@
+	.red {
+		color:#ff0000;
+	}
+	.gold{
+		color:#ff9933;
+	}
+	.torquoise {
+		color:#ff00ff;
+	}
+	a:link {
+		text-decoration:underline;
+	}
+	a:link,a:hover{
+	color:#ff00ff;
+	}
+	a:hover{
+	text-decoration:none;
+	}
+	.dg {
+	color:#ffcc33;
+	}

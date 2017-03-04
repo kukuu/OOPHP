@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Basic html form</title>
+</head>
+
+<body>
+<!-- form.html -->
+<form action="handle_form.php" method="post">
+	<fieldset>
+		<legend>
+			<p><b>Name: <input type="text" name="fname" size="20" maxlength="40" /></b></p>
+			<p><b>Email Address: <input type="text" name="email" size="40" maxlength="60" /></b></p>
+			<p><b>Gender:</b> <input type="radio" name="gender" value="M" /> Male <input type="radio" name="gender" value="F" /> Female</p>
+			<p><b>Age:</b>
+				<select name="age">
+					<option value="0-29">Under 30</option>
+					<option value="30-60">Between  30 and 60</option>
+					<option value="60+">Over60</option>		
+				</select>
+			</p>
+			<p><b>Comment: </b><br />
+				<textarea name="comments" row="3" cols="40"></textarea>			
+			</p>
+		</legend>	
+	</fieldset>
+	<input type="submit" name="submit" value="submit" />
+	
+</form>
+
+
+</body>
+</html>

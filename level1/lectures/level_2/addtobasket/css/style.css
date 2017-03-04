@@ -1,0 +1,561 @@
+/*
+
+Title     : CSS for LoveliFolk
+Author    : Alexander Adu-Sarkodie
+Job Title : UI Developer 
+Date      : July 2013
+
+
+
+/********** Responsive Design : Ingredients ********
+**************************************************** 
+
+Using a simple relationship between objects and elements of the design in question, we can implement responsive design.
+
+Formula: target / context = result
+
+where:
+
+target: Element or object  being targeted
+
+context: Parent element or object of the targeted element
+
+
+It takes three core ingredients to create a responsive design:
+
+1. A flexible, grid-based layout,
+2. Flexible images and media, and
+3. Media queries & Media Query Listeners, a module from the CSS3 specification.
+
+*/
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+body { 
+	margin: 0; 
+	font-size: 1em; 
+	line-height: 1.4;
+	font: normal 100% Arial, Helvetica, sans-serif; 
+	background-color:#2C2D31;
+}
+
+body p {  
+	font-size: 0.88em; 
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #; }
+a:visited { color: #; }
+a:hover { color: #; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/***********Flexible Fonts******************
+********************************************
+
+To do so, we’ll need to do a little bit of math: we’ll simply
+take the target font size from our computer, and divide it by the font-size of its containing element—in other words, its context. 
+The result is our desired font-size expressed in relative, oh-so-flexible ems.
+In other words, relative type sizes can be calculated with this simple formula:
+
+target ÷ context = result
+
+*/
+
+/* And there we are: 24px is 1.5 times greater than 16px, so our font-size is 1.5em:16px is our context and 24px is our target*/
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin:0; padding:0; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+
+/******* From PIXELS to PERCENTAGES******
+******************************************
+
+
+Instead of pasting the pixel values directly into our CSS, we need to express those widths in 
+relative, proportional terms. Once we’ve done so, we’ll have a grid that can resize itself as the viewport does, 
+but without compromising the design’s original proportions.*/
+
+
+
+#page {
+	margin: 10px  auto;
+	width: 90%;/*with trial and errors in the browser to see what looks best */
+}
+
+.lede {
+	padding-bottom:40px;
+}
+
+button {
+
+	font-sze:0.88em;
+}
+h1,
+.settings {
+	float:left;
+	margin-top:0;
+}
+
+h1{
+	padding:5px 0 5px 0;
+}
+
+.settings {
+	padding:33px 0 0 5px;
+}
+
+.settings ul li {
+	display:inline;
+	color:#A2A4A1;
+}
+.settings span.items {
+	color:#61ABC4;
+	font-size:0.90em;
+	padding:5px 0 0 5px;
+}
+
+.strapline {
+	margin:0 0 20px 0px;
+	height:450px;
+	border-bottom:2px solid #3E3F43;
+}
+
+.social-media {
+	margin:60px 0 35px 0px;
+}
+
+.gallery {
+	height:312px;
+	margin-left:0px;
+	background-color:#00ff99;
+}
+
+.main-footer {
+	height:40px;
+	margin: -20px 0 40px 48px;
+	color:#fff;
+	clear:left;
+	width:90%;
+}
+
+.main-footer p {
+	float:right;
+	padding-left:20px;
+}
+
+.join-us {
+	color:#767D85;
+	font-weight:bold;
+	font-size:1.3em;
+	padding-right:5px;
+	vertical-align:bottom;
+}
+
+
+.mini-nav {
+	float:right;
+}
+
+ul {
+	list-style-type:none;
+	clear:both
+}
+
+.mini-nav ul li {
+	display:inline;
+	font-size:0.78em;
+	
+}
+
+.mini-nav ul {
+	margin-top:5px
+}
+
+.sign-in {
+	margin-top:0;
+}
+
+.sign-in a {
+	float:left;
+}
+
+.sign-in a:first-child {
+
+}
+/*
+
+
+/**************** Flexible Images*************
+**********************************************/
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+/*   
+In order to avert a blanket rule for all images, I have added some specificity below, which could be useful:*/
+
+
+img.full,
+embed.full,
+object.full,
+video.full {
+    max-width: 100%;
+}
+
+*/
+
+/*Also, if you had a PNG attached to an element’s background, you could drop the following rule into an IE-specific stylesheet.
+This AlphaImageLoader patch does a few things. First, it removes the background image
+ from the element, then inserts it into an AlphaImageLoader object that sits “between” 
+ the proper background layer and the element’s content. But the sizingMethod property is the clever bit, 
+ dictating whether the AlphaImageLoader object should crop any parts of the image that overflow its container, 
+ treat it like a regular image, or scale it to fit it within its containing.*/
+ 
+.logo {
+    background: none;
+    filter: progid:DXImageTransform.Microsoft. AlphaImageLoader(src="/path/to/logo.png", sizingMethod="scale");
+}
+
+
+
+@media print {
+    body {
+        font-size: 15pt;
+    }
+    
+    h1 {
+        text-transform:uppercase;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+
+/* Chaining multiple queries */
+ 
+*@media screen and (max-device-width: 480px) and (orientation: landscape)  {
+   a {
+      font-size:0.85em;
+      cursor:pointer;
+      text-decoration:none;
+   } 
+       
+ }
+
+/* Below 768px, we instruct the #page element to occupy the full width of the browser window, saving 
+a fixed 20px-wide margin around its edges.
+The second rule below selects the blog (.blog), and disables its horizontal margins, making it occupy the full width of #page. */
+
+@media screen and (max-width: 768px) {
+    #page {
+    margin: 20px;
+    width: auto;
+   }
+}
+
+
+
+
+@media screen and (max-width: 768px)  and (min-width: 480px) {
+    p:first-child {
+        color:#EC7731; 
+    }
+}/*/mediaquery*/
+
+
+@media screen and (max-width: 480px)  {
+   .settings {
+      float:left;
+	  margin-bottom:15px;
+   } 
+   
+ 
+   .strapline {
+		clear:left;
+	}
+	
+	 .splash-item1,
+	.splash-item2,
+	.strapline {
+		margin-bottom:15px;
+	}
+	 
+	    
+ }
+ 
+ 
+.splash {
+	width:98%;
+	border-top:2px solid #3E3F43;
+	margin:34px 0 5px 0;
+}
+
+.splash img {
+	margin-top:-10px;
+}
+
+
+.settings ul,
+.settings span {
+	float:left;
+}
+
+.settings ul li:first {
+	color:#A0ABA7;
+	font-size:0.88em;
+}
+
+.settings ul li {
+	padding-right:25px;
+}
+
+.settings ul li.last {
+	padding-right:110px;
+}
+
+.basket {
+	background:url(../images/basket.jpg);
+	width:24px;
+	height:36px;
+}
+
+.settings a:link,
+a:visited,
+a:active {
+	color:#6E6F6A;
+	text-decoration:none;
+}
+
+.settings a:hover {
+	color:#A0ABA7;
+}
+
+.settings a {
+	text-translate:uppercase;
+	font-size:0.90em;
+}
+
+.left-col,
+.middle-col,
+.right-col {
+	float:left;
+}
+
+.left-col ul li {
+	margin-bottom:20px;
+	height:100px;
+}
+
+
+
+.middle-col {
+	border-right:2px dashed #3E3F43;
+	border-left:2px dashed #3E3F43;
+}
+
+
+.right-col img,
+.middle-col img {
+	padding:0 10px 0 10px;
+}
+
+.left-col {
+	width:279px;
+}
+
+.label-text {
+	color:#61ABC4;
+	font-size:1.5em;
+	background-color:#262729;
+	margin:0 10px 0 10px;
+	text-align:center;
+}
+
+.summary-text {
+	color:#5E5E60;
+	padding:0 10px;
+	margin-top:0;
+	width:286px;
+}
+
+.product,
+.summary {
+	float:left;
+}
+
+.summary {
+    color: #A2A3A5;
+    margin: -20px 0 0 10px;
+    padding-right: 10px;
+    width: 66%;
+}
+
+.summary h3 {
+	color:#fff;
+	margin-bottom:-15px;;
+	font-size:1.0em;
+}
+
+
+
+
+span.addto-text {
+	color:#656972;
+	font-size:0.66em;
+	padding-left:3px;
+}
+
+.addto-basket {
+	background-color:#27282A;
+	padding:0 5px 0 5px;
+}
+
+.addto-basket .basket,
+.addto-basket .addto-text {
+	float:left;
+}
+
+.left-col h2 {
+	margin:0 10px 10px 0;
+	margin-bottom:10px;
+	text-align:left;
+	padding-left:10px;
+}
+
+
+.cartHeaders,.totalRow{display:none;}
+.simpleCart_items{
+	margin-bottom:20px;
+}
+.itemContainer{
+	clear:both;
+	padding:11px 0;
+	font-size:11px;
+	width:110px;
+	background-color:#2C2D31;
+}
+.itemImage{
+	float:left;
+	width:60px;
+}
+.itemName{
+	float:left;
+	width:65px;
+	padding-left:10px;
+	margin-top:-10px;
+
+}
+.itemPrice{
+	float:left;
+	width:85px;
+	color:#418932;
+	display:none;
+}
+.itemQuantity{
+	float:left;
+	width:22px;
+	margin-top:-12px;
+	vertical-align:middle;
+}
+.itemQuantity input{
+	width:20px;
+	border:1px solid #ccc;
+	padding:3px 2px;
+}
+
+.itemTotal{
+	float:left;
+	color:#c23f26;
+	margin-top:-6px;
+	display:none;
+}
+
+a.simpleCart_empty {
+	color:#61ABC4;
+}

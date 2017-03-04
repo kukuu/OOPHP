@@ -1,0 +1,32 @@
+ <html>
+ <head>
+	<title></title>
+ </head>
+ <body>
+	<form action="form_processing.php" method="post">
+		<fieldset>
+			<legend><h1>Please fill in the form below</h1></legend>
+			<p><b>Name: <input type="text" name="name" size="20" maxlength="40"/></b></p>
+			<p><b>Email Address: <input type="text" name="email" size="40" maxlength="60"/></b></p>
+			<p>
+				<b>Gender:
+					<input type="radio" name="gender" value="M"/> Male
+					<input type="radio" name="gender" value="F"/> Female
+				</b>
+			</p>
+			<p><b>Age:</b>
+				<select name="age">
+					<option value = "0-29">Under 30</option>
+					<option value = "30-60">Between 30 and 60</option>
+					<option value = "60+">60+</option>
+				</select>
+			</p>
+			<p>
+				<b>Comment:</b> <br/>
+				<textarea name="comments" row="3" cols="40"></textarea>
+			</p>
+		</fieldset>
+		<input type="submit" name="submit" value="submit">
+	</form>
+ </body>
+ </html>

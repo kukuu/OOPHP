@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="nameApp">
+	<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script>
+	var nameApp = angular.module('nameApp',[]);
+	//we will optimise and leverage the second function parameter 
+	//into an array for cases where minification re-writes the function signatures
+	//the array will be accepting strings in this case.
+	nameApp.controller('NameCtrl',function($scope){
+		$scope.names = ['Luca','Tahir','Adam'];
+	//create an anonymous function that will execute at run time and add at run time
+		$scope.addName = function(){
+			$scope.names.push($scope.enteredName);
+			//empty added name from input field
+			$scope.enteredNmae = '';
+			//removing an added name from the scope
+			$scope.removeName = function(name){
+				//we find the index of the name to be removed
+				var i = $scope.names.indexOf(name);
+				$scope.enteredName.splice(i,1);
+			} ;
+		}
+	})
+	</script>
+
+	<body ng-controller="NameCtrl">
+		<ul>
+			<li ng-repeat="name in names">
+				{{name}}<a href='' ng-click="removeName(name)">remove</a>
+			</li>
+		<ul>
+		<form ng-submit="addName()">
+			<input type="text" ng-model="enteredName">
+			<input type="submit" value="add">
+		</form>
+	</body>
+</html>

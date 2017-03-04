@@ -1,0 +1,20 @@
+<div ng-app = "myApp">
+	<clock timezone = "MSP"></clock>
+</div>
+
+
+<script type="text/javascript">
+	var myApp = angular.module(myApp,[]);
+	myApp.directive("clock",function(){
+
+		return {
+			restrict:'E',
+			scope: {
+				timezone : "@"
+			}
+			template : "<div>12:00 {{timezone}}</div"
+		}
+
+	})
+
+</script>

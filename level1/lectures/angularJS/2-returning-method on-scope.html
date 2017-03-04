@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+	<div ng-app>
+	
+		<!--<input type="text" ng-model="data.message">
+		<h1>{{data.message}}</h1>-->
+			
+			<div ng-controller="FirstCtrl">
+				<input type="text" ng-model="data.message">
+				<h1>{{data.message}}</h1>
+			</div>
+			
+			<div ng-controller="SecondtCtrl">
+				<input type="text" ng-model="data.message">
+				<!--<h1>{{data.reverseMessage()}}</h1>-->
+				<h1>{{data.reverseMessage(data.message)}}</h1>
+			</div>
+	</div>
+	<script type="text/javascript" src="script/vendor/angular.js"></script>
+	<script src="script/define-method-on-scope.js"></script>
+
+</body>
+</html>

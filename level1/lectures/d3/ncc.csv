@@ -1,0 +1,6 @@
+variable name,index position,number
+$magicNums[0],0,3
+$magicNums[1],1,4
+$magicNums[2],2,8
+$magicNums[3],3,7
+$magicNums[4],4,12
