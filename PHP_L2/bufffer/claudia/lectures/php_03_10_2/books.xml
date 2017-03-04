@@ -1,0 +1,20 @@
+<books>
+<book>
+	<title>The Grapes of Wrath</title>
+	<author>John Steinbeck</author>
+	<picture href="flower.jpg" height="42" width="42"></picture>
+	<website></website>
+</book>
+<book>
+	<title>The Pearl</title>
+	<author>John Steinbeck</author>
+	<picture href="flower.jpg" height="42" width="42"></picture>
+	<website></website>
+</book>
+<book>
+	<title>The Pearl1</title>
+	<author>John Steinbeck</author>
+	<picture href="flower.jpg" height="42" width="42"></picture>
+	<website></website>
+</book>
+</books>

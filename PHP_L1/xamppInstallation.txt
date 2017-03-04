@@ -1,0 +1,37 @@
+
+
+Hi 
+
+As promissed, find URL's for installation of XAMPP software for running MySQL/PHP below.
+ 
+http://heanet.dl.sourceforge.net/sourceforge/xampp/xampp-win32-1.6.3a-installer.exe
+ 
+Installation docs are here (but it's only 2 steps):
+ 
+http://www.apachefriends.org/en/xampp-windows.html#522
+ 
+Basically, it installs an icon in your system tray that you can click  to open the XAMPP control panel, where you can start and stop  services like Apache and MySQL.
+ 
+Once it's installed visit "http://localhost" and you will see the XAMPP homepage, where you can read the docs (as taught  and demonstrated in lessons), and crucially access  phpMyAdmin which you can use to access MySQL.
+
+Bookmark these resources after completing download:
+XAMPP homepage -  http://localhost/xampp/index.php 
+PHPMyAdmin -   http://localhost/phpmyadmin/  
+Working direectory - PHP files c:\xampp\htdocs
+
+(Dont't  worry too much about MySQL as we have not begun this aspect of your course.The software is to help you run php from  Apache).
+
+Also, visit the Biopic and the Blog sites listed below to acquaint with related technologies in Digital and Future Media.
+
+
+Biopic: http://www.goldhawk-college.com/istudio/
+
+Blog: http://www.blogger.com/profile/14800490193632788559
+
+ 
+Hope you find this useful.
+ 
+Regards
+Alexander 
+(Your Tutor)
+ 

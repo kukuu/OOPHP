@@ -1,0 +1,16 @@
+
+Below are the points we would like to achieve:
+
+ 
+
+-          Learn the basics of MYSQL to:
+
+o        Troubleshoot MYSQL errors on the www.citylit.ac.uk website
+
+o        Create simple databases that are operable on the website
+
+o        Edit existing databases on the website
+
+ 
+
+Does this sound reasonable? 

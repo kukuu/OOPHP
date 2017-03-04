@@ -1,0 +1,24 @@
+
+* http://www.cgisecurity.com/xss-faq.html
+
+* http://www.royaltynetworks.com/blog/2012/03/05/the-3-types-of-ssl-certificate-validation/  
+
+Types of SSL CERTIFICATES:
+...............................
+=> Domain Validation (DV) (check)- this is basic
+This is the most basic level of SSL validation, the issuer verifies that you are the owner of the domain by checking your information against the WHOIS database. While this will enable encryption on your site and provide a decent amount of added security, it does not verify you as the operator of a legitimate business. This a great quick solution if you want your users to feel safer seeing the familiar padlock and https:// and not running into any warning screens, but an organizationally validated certificate is recommended for transmitting sensitive information.
+
+
+=> Organisational (OV)
+..............................
+An organizationally validated SSL certificate is designed for businesses and is especially beneficial to ecommerce, sales, and service providers who need to transmit sensitive data on their server such as credit card numbers and contact information. The process for validation is lengthier and more in-depth, the issuer will not only check to see if you are the owner of the domain, they will also need to verify that you are the owner of a real business. To do this you’ll need to provide the credentials and paperwork verifying the legitimacy of your business and your status as its owner (specifically your Articles of Incorporation), as well as proof of your physical address. One of the main advantages to getting an organization validation is that your site will be displayed in the browser as a trusted site and users will feel far more confident doing business with you 
+
+=> Extended Validation
+........................
+
+Extended validation was released in 2007 and it is the most complete SSL encryption solution to date, the most reputable and trustworthy organizations make use of EV. The validation process is more thorough, only businesses that have been proven to be consistently reliable with quality services or products are given extended validation. The most obvious perk is the green URL bar that signifies to users that they are visiting a website associated with a verified reputable business and that the website has been proven to be safe and secure. This is a far more prominent indicator than other validations and users absolutely take notice.
+
+
+"What can I do to protect myself as a vendor?"
+
+  This is a simple answer. Never trust user input and always filter metacharacters. This will eliminate the majority of XSS attacks. Converting < and >  to < and > is also suggested when it comes to script output. Remember XSS holes can be damaging and costly to your business if abused. Often attackers will disclose these holes to the public, which can erode customer and public confidence in the security and privacy of your organization's site. Filtering < and > alone will not solve all cross site scripting attacks. It is suggested you also attempt to filter out ( and ) by translating them to &#40; and &#41; , " to &quot; , ' to &#39; , and also # and & by translating them to &#35;(#)  and &amp;  (&). A more complete list of entities can be found at http://tntluoma.com/sidebars/codes/ .

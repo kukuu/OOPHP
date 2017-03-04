@@ -1,0 +1,106 @@
+I can do 6.15pm on Tuesday, in the Cafe Nero coffee shop on King Street 
+in Hammersmith? 
+
+Can you make that? 
+
+Ben 
+
+alex@codeunique.com wrote: 
+> Hi Ben, 
+> I have made efforts to get apache installed and runing but it doesn't 
+> seem to unisnstal.Not from control panel or manual.I will need some help 
+> to get MySql and PHP running.Can we please agree on a time we can meet 
+> ?Tuesday or Wednesday?Quite flexible for any meeting please .I have some 
+> php code written which would want to test. 
+> 
+> Please let me know if you are available any time next week.Say after work. 
+> 
+> 
+> Regards 
+> Alex 
+> 
+>     ------------------------------------------------------------------------ 
+>     *From:* Alexander Adu-Sarkodie [mailto:Alex.Adu-Sarkodie@bbc.co.uk] 
+>     *To:* Ben Roberts [mailto:ben@headsnet.com] 
+>     *Cc:* alex@codeunique.com 
+>     *Sent:* Wed, 22 Aug 2007 16:44:52 +0100 
+>     *Subject:* RE: XAMPP 
+> 
+> 
+>     Hi Ben, 
+>     Thanks once again.I downloaded the programme and everything seem to 
+>     have gone well until runing a test.Apache I was told was already in 
+>     use at ports 00 or 043 and that installation had failed for 
+>     Apache.Also, I tried to launch the database to create a table but 
+>     the menu was inaccessible. 
+> 
+>     I will be pleased for you to take me through some trouble shooting 
+>     as well.I am quite flexible.We can meet in a café in Fulham or 
+>     Hammersmith or at work in the evening.I will have my laptop with 
+>     me.I don't think more than an hour will go into this. Please let me 
+>     know when you will be available.Will surely pay you for this. 
+> 
+>     Regards 
+>     Alex 
+>     -----Original Message----- 
+>     From: Ben Roberts [mailto:ben@headsnet.com <mailto:ben@headsnet.com>] 
+>     Sent: 21 August 2007 13:30 
+>     To: alex@codeunique.com <mailto:alex@codeunique.com>; Alexander 
+>     Adu-Sarkodie 
+>     Subject: XAMPP 
+> 
+> 
+>     Hi Alex, 
+> 
+>     Here's the link to the XAMPP installer: 
+>     http://heanet.dl.sourceforge.net/sourceforge/xampp/xampp-win32-1.6.3a-installer.exe 
+> 
+>     Installation docs are here (but it's only 2 steps): 
+>     http://www.apachefriends.org/en/xampp-windows.html#522 
+> 
+>     And some more info on using it: 
+>     http://www.apachefriends.org/en/xampp-windows.html#1173 
+> 
+>     Basically it installs an icon in your system tray that you can click 
+>     to open the XAMPP control panel, where you can start and stop 
+>     services like Apache and MySQL. 
+> 
+>     Once it's installed visit "http://localhost" and you will see the 
+>     XAMPP homepage, where you can read the docs, and crucially access 
+>     phpMyAdmin which you can use to access MySQL. 
+> 
+>     Hope this is useful. 
+> 
+>     Ben 
+> 
+>     -- 
+>     Ben Roberts 
+>     ______________________________ 
+> 
+>     Headstrong Internet Services 
+>     Tel: 0845 0945 870 
+>     Web: http://www.headsnet.com/ 
+>     ______________________________ 
+> 
+> 
+> 
+>     http://www.bbc.co.uk/ 
+>     This e-mail (and any attachments) is confidential and may contain 
+>     personal views which are not the views of the BBC unless 
+>     specifically stated. 
+>     If you have received it in error, please delete it from your system. 
+>     Do not use, copy or disclose the information in any way nor act in 
+>     reliance on it and notify the sender immediately. 
+>     Please note that the BBC monitors e-mails sent or received. 
+>     Further communication will signify your consent to this. 
+> 
+
+-- 
+Ben Roberts 
+______________________________ 
+
+Headstrong Internet Services 
+Tel: 0845 0945 870 
+Web: http://www.headsnet.com/ 
+______________________________ 
+

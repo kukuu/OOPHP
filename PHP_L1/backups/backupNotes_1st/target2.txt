@@ -1,0 +1,17 @@
+
+Below are the points we would like to achieve:
+
+ 
+o          Learn the basics of MYSQL to:
+
+o        Create simple databases that are operable on the website
+
+o        Troubleshoot MYSQL errors on the www.citylit.ac.uk website
+
+
+o        Edit existing databases on the website
+
+O       Publish and maintain imagee in records
+
+0        File upload (FTP)
+

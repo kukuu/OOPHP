@@ -1,0 +1,579 @@
+
+Meeting Agenda  25/078/07:
+PHP/MySQL/Apache 
+                      1 Install Apache/MySql/PHP
+                      2  Create simple  simple databases that are operable on the website from MySQL Admin 
+                       
+                      3. Troubleshoot MYSQL errors i.e     
+Error message:
+Insertion error MYSQL said:'Column count doesn't match value count at row 1'
+    
+  4 Export / Edit existing databases on the website
+  5.  Publishing images as from records
+
+
+
+
+--------------------------------------------------------------------------------
+From: Alexander Adu-Sarkodie [mailto:Alex.Adu-Sarkodie@bbc.co.uk]
+To: alex@codeunique.com
+Sent: Fri, 24 Aug 2007 17:43:32 +0100
+Subject: FW: Development Training
+
+
+ 
+
+
+
+--------------------------------------------------------------------------------
+From: McCaugherty, Simon [mailto:Simon.McCaugherty@citylit.ac.uk] 
+Sent: 24 August 2007 11:38
+To: Alexander Adu-Sarkodie
+Cc: alex@codeunique.com
+Subject: RE: Development Training
+
+
+Yes - when I get back will be fine. There’s no immediate rush.
+
+ 
+
+See you soon.
+
+Regards,
+
+Simon
+
+ 
+
+Simon McCaugherty | Marketing Communications Co-ordinator 
+020 7492 2672 | www.citylit.ac.uk 
+
+
+--------------------------------------------------------------------------------
+
+From: Alexander Adu-Sarkodie [mailto:Alex.Adu-Sarkodie@bbc.co.uk] 
+Sent: 24 August 2007 11:35
+To: McCaugherty, Simon
+Cc: alex@codeunique.com
+Subject: RE: Development Training
+
+ 
+
+Hi Simon,
+
+I will be evaluating the work over the week end in terms of time.Will let you know when you're back.I was in yesterday to familiarise myself with the work and the problems.I will be siting down in the nrxt couple of days to quantify the time needed.Is this something they can hung on till you're back.
+
+ 
+
+Regards.
+
+Alex
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+From: McCaugherty, Simon [mailto:Simon.McCaugherty@citylit.ac.uk] 
+Sent: 24 August 2007 11:27
+To: Alexander Adu-Sarkodie
+Cc: alex@codeunique.com
+Subject: RE: Development Training
+
+Hi Alex,
+
+ 
+
+Thanks for coming in yesterday. The areas we have identified below sound good to me. I will let you know when I return from annual leave and we can get cracking on this. Personnel have asked me how many hours you think this might require – what do you think?
+
+ 
+
+Below is the information you requested and I’ll speak to you soon.
+
+Thanks,
+
+Simon
+
+ 
+
+Error message:
+
+Insertion error MYSQL said:'Column count doesn't match value count at row 1'
+
+ 
+
+Here is a screen print from one of the MySQL reports we use:
+
+ 
+
+
+ 
+
+Simon McCaugherty | Marketing Communications Co-ordinator 
+020 7492 2672 | www.citylit.ac.uk 
+
+
+--------------------------------------------------------------------------------
+
+From: Alexander Adu-Sarkodie [mailto:Alex.Adu-Sarkodie@bbc.co.uk] 
+Sent: 23 August 2007 18:06
+To: McCaugherty, Simon
+Cc: alex@codeunique.com
+Subject: RE: Development Training
+
+ 
+
+Hi Simon,
+
+this email follows our consultation this morning.Below are the issues we covered which are subject for expansion expansion and.
+
+ 
+
+Agenda for Database Optimisation 23/08/07 at the City Lit
+
+ 
+
+A
+
+Current operation and state of DB system in use 
+System components, software, application in use 
+State of current problem 
+Volume of work 
+Time scale 
+ 
+
+B.
+
+Dependencies  (Create a model / prototype using XAMPP to simulate real environment) 
+Trouble shooting MySql  errors 
+Installation – Apache,MySql and PHP (Configuration settings, control panel, MySql Admin, Create forms in php to querry DB and troubleshoot, FTP using Filezilla, Breamweaver et etc) 
+Manipulate DB (prototype) using DDL (Data Definition Language) and DML (Data Manipulation Language)  
+ 
+
+1.      INSERT
+
+2.      UPDATE
+
+3.      DELETE
+
+Security and Administration 
+As agreed I will work to simulate the sort of architecture and data structuret that you work with so we can probe and query it for all instances that will be of help to you including merging reports and understanding errors.
+
+ 
+
+Let me know when you're back from holidays and I will send you some useful resources to read.Hope today's meeting was useful.Please send me the list of column header names that we looked at id, depttitle etc.
+
+ 
+
+Also copy and paste the error message in your reply.
+
+ 
+
+Hope you enjoy your holiday.
+
+ 
+
+ 
+
+Regards
+
+ 
+
+Alex
+
+ 
+
+ 
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+From: McCaugherty, Simon [mailto:Simon.McCaugherty@citylit.ac.uk] 
+Sent: 21 August 2007 15:53
+To: Alexander Adu-Sarkodie
+Subject: RE: Development Training
+
+Hi Alex,
+
+ 
+
+Thursday morning will be fine, I’m free all morning. Let me know what time you can make it in and I will come and meet you in reception.
+
+ 
+
+Regards, 
+
+Simon
+
+ 
+
+Simon McCaugherty | Marketing Communications Co-ordinator 
+020 7492 2672 | www.citylit.ac.uk 
+
+
+--------------------------------------------------------------------------------
+
+From: Alexander Adu-Sarkodie [mailto:Alex.Adu-Sarkodie@bbc.co.uk] 
+Sent: 21 August 2007 15:30
+To: McCaugherty, Simon
+Subject: RE: Development Training
+
+ 
+
+Hi Simon,
+
+just forgot it was a bank holiday.Will Thursday morning be fine?It will help for us to meet so I can get a first hand of some of some of the issues that has been mentioned.
+
+ 
+
+Regards
+
+Alex
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+From: McCaugherty, Simon [mailto:Simon.McCaugherty@citylit.ac.uk] 
+Sent: 21 August 2007 13:56
+To: Alexander Adu-Sarkodie
+Cc: alex@codeunique.com
+Subject: RE: Development Training
+
+Hi Alex,
+
+ 
+
+I’m afraid I’m on holiday from Monday 27 August (which is also a bank holiday). I won’t be back in the office until Thursday 14 September. I am free after this date to meet and can be flexible to suit your availability. 
+
+ 
+
+Thanks.
+
+Simon
+
+Simon McCaugherty | Marketing Communications Co-ordinator 
+020 7492 2672 | www.citylit.ac.uk 
+
+
+--------------------------------------------------------------------------------
+
+From: Alexander Adu-Sarkodie [mailto:Alex.Adu-Sarkodie@bbc.co.uk] 
+Sent: 21 August 2007 13:43
+To: McCaugherty, Simon
+Cc: alex@codeunique.com
+Subject: RE: Development Training
+
+ 
+
+Hi Simon,
+
+I am available for a preliminary meeting to discuss elements of this work Monday morning at 9am or after work.
+
+ 
+
+Let me know if this is feasible.
+
+ 
+
+Thanks
+
+Alex
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+From: McCaugherty, Simon [mailto:Simon.McCaugherty@citylit.ac.uk] 
+Sent: 20 August 2007 15:25
+To: Alexander Adu-Sarkodie
+Subject: FW: Development Training
+
+Hi Alex,
+
+ 
+
+Below are the points we would like to achieve:
+
+ 
+
+-          Learn the basics of MYSQL to:
+
+o        Troubleshoot MYSQL errors on the www.citylit.ac.uk website
+
+o        Create simple databases that are operable on the website
+
+o        Edit existing databases on the website
+
+ 
+
+Does this sound reasonable? 
+
+ 
+
+Let me know if there is there anything I need to do in preparation for the meeting. Also, having done a little research I note that the software for MYSQL can be downloaded for free off the website – if there any other software that would be of use? We currently use Dreamweaver for basic editing of the website and I access the basic MYSQL databases to run a report (download names and address entered on the website).
+
+ 
+
+Thanks,
+
+Simon
+
+ 
+
+Simon McCaugherty | Marketing Communications Co-ordinator 
+020 7492 2672 | www.citylit.ac.uk 
+
+
+--------------------------------------------------------------------------------
+
+From: Foulds, Brenda 
+Sent: 20 August 2007 14:11
+To: McCaugherty, Simon
+Subject: FW: Development Training
+
+ 
+
+ 
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+From: Alexander Adu-Sarkodie [mailto:Alex.Adu-Sarkodie@bbc.co.uk] 
+Sent: 20 August 2007 13:46
+To: Foulds, Brenda
+Subject: FW: Development Training
+
+ 
+
+Hi Brenda,
+
+this mail did not reach Simon and has been returned.Can you please forward this to him and for him to confirm receipt.
+
+ 
+
+Regards
+
+Alex
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+From: Alexander Adu-Sarkodie 
+Sent: 20 August 2007 11:28
+To: 'brenda.foulds@citylit.ac.uk'
+Cc: 'simon.mccaughterty@citylit.ac.uk'; 'alex@codeunique.com'
+Subject: Development Training
+
+Hi Brenda,
+
+this is to confirm our conversation this morning.I will email tomorrrow to confirm date for our preliminary meeting.An hour and half should be sufficient.In preparation towards this, can you let me have ( from the  marketing team )  a brief outline of what they intend to achieve.
+
+ 
+
+ 
+
+Regards
+
+Alex
+
+
+http://www.bbc.co.uk
+This e-mail (and any attachments) is confidential and may contain personal views which are not the views of the BBC unless specifically stated.
+If you have received it in error, please delete it from your system.
+Do not use, copy or disclose the information in any way nor act in reliance on it and notify the sender immediately.
+Please note that the BBC monitors e-mails sent or received.
+Further communication will signify your consent to this.
+
+DISCLAIMER:
+
+****************************************************************************
+
+For the latest City Lit news & information, please visit our website www.citylit.ac.uk
+
+**************************************************************************** 
+
+City Lit 
+
+Registered Office: 1-10 Keeley Street , London WC2B 4BA 
+
+Registered in England no: 2471686 
+
+Registered Charity no: 803007 
+
+**************************************************************************** 
+
+PRIVACY AND CONFIDENTIALITY NOTICE. 
+
+**************************************************************************** 
+
+This e-mail may contain privileged or confidential information. 
+
+The message and any files transmitted with it are intended only for the use of the recipient or organisation to whom it is addressed. 
+
+If you are not the intended recipient, no action may be taken on the information nor may it be copied or shown to a third party and you are asked to notify the sender named above. 
+
+Views expressed in this message are those of the individual sender, except where specifically stated to be the views of City Lit. 
+http://www.bbc.co.uk
+This e-mail (and any attachments) is confidential and may contain personal views which are not the views of the BBC unless specifically stated.
+If you have received it in error, please delete it from your system.
+Do not use, copy or disclose the information in any way nor act in reliance on it and notify the sender immediately.
+Please note that the BBC monitors e-mails sent or received.
+Further communication will signify your consent to this.
+
+DISCLAIMER:
+
+****************************************************************************
+
+For the latest City Lit news & information, please visit our website www.citylit.ac.uk
+
+**************************************************************************** 
+
+City Lit 
+
+Registered Office: 1-10 Keeley Street , London WC2B 4BA 
+
+Registered in England no: 2471686 
+
+Registered Charity no: 803007 
+
+**************************************************************************** 
+
+PRIVACY AND CONFIDENTIALITY NOTICE. 
+
+**************************************************************************** 
+
+This e-mail may contain privileged or confidential information. 
+
+The message and any files transmitted with it are intended only for the use of the recipient or organisation to whom it is addressed. 
+
+If you are not the intended recipient, no action may be taken on the information nor may it be copied or shown to a third party and you are asked to notify the sender named above. 
+
+Views expressed in this message are those of the individual sender, except where specifically stated to be the views of City Lit. 
+http://www.bbc.co.uk
+This e-mail (and any attachments) is confidential and may contain personal views which are not the views of the BBC unless specifically stated.
+If you have received it in error, please delete it from your system.
+Do not use, copy or disclose the information in any way nor act in reliance on it and notify the sender immediately.
+Please note that the BBC monitors e-mails sent or received.
+Further communication will signify your consent to this.
+
+DISCLAIMER:
+
+****************************************************************************
+
+For the latest City Lit news & information, please visit our website www.citylit.ac.uk
+
+**************************************************************************** 
+
+City Lit 
+
+Registered Office: 1-10 Keeley Street , London WC2B 4BA 
+
+Registered in England no: 2471686 
+
+Registered Charity no: 803007 
+
+**************************************************************************** 
+
+PRIVACY AND CONFIDENTIALITY NOTICE. 
+
+**************************************************************************** 
+
+This e-mail may contain privileged or confidential information. 
+
+The message and any files transmitted with it are intended only for the use of the recipient or organisation to whom it is addressed. 
+
+If you are not the intended recipient, no action may be taken on the information nor may it be copied or shown to a third party and you are asked to notify the sender named above. 
+
+Views expressed in this message are those of the individual sender, except where specifically stated to be the views of City Lit. 
+http://www.bbc.co.uk
+This e-mail (and any attachments) is confidential and may contain personal views which are not the views of the BBC unless specifically stated.
+If you have received it in error, please delete it from your system.
+Do not use, copy or disclose the information in any way nor act in reliance on it and notify the sender immediately.
+Please note that the BBC monitors e-mails sent or received.
+Further communication will signify your consent to this.
+
+DISCLAIMER:
+
+****************************************************************************
+
+For the latest City Lit news & information, please visit our website www.citylit.ac.uk
+
+**************************************************************************** 
+
+City Lit 
+
+Registered Office: 1-10 Keeley Street , London WC2B 4BA 
+
+Registered in England no: 2471686 
+
+Registered Charity no: 803007 
+
+**************************************************************************** 
+
+PRIVACY AND CONFIDENTIALITY NOTICE. 
+
+**************************************************************************** 
+
+This e-mail may contain privileged or confidential information. 
+
+The message and any files transmitted with it are intended only for the use of the recipient or organisation to whom it is addressed. 
+
+If you are not the intended recipient, no action may be taken on the information nor may it be copied or shown to a third party and you are asked to notify the sender named above. 
+
+Views expressed in this message are those of the individual sender, except where specifically stated to be the views of City Lit. 
+http://www.bbc.co.uk
+This e-mail (and any attachments) is confidential and may contain personal views which are not the views of the BBC unless specifically stated.
+If you have received it in error, please delete it from your system.
+Do not use, copy or disclose the information in any way nor act in reliance on it and notify the sender immediately.
+Please note that the BBC monitors e-mails sent or received.
+Further communication will signify your consent to this.
+
+
+DISCLAIMER:
+
+
+****************************************************************************
+
+For the latest City Lit news & information, please visit our website www.citylit.ac.uk
+
+**************************************************************************** 
+
+City Lit 
+
+Registered Office: 1-10 Keeley Street , London WC2B 4BA 
+
+Registered in England no: 2471686 
+
+Registered Charity no: 803007 
+
+
+**************************************************************************** 
+
+PRIVACY AND CONFIDENTIALITY NOTICE. 
+
+**************************************************************************** 
+
+This e-mail may contain privileged or confidential information. 
+
+The message and any files transmitted with it are intended only for the use of the recipient or organisation to whom it is addressed. 
+
+If you are not the intended recipient, no action may be taken on the information nor may it be copied or shown to a third party and you are asked to notify the sender named above. 
+
+Views expressed in this message are those of the individual sender, except where specifically stated to be the views of City Lit. 
+http://www.bbc.co.uk
+This e-mail (and any attachments) is confidential and may contain personal views which are not the views of the BBC unless specifically stated.
+If you have received it in error, please delete it from your system.
+Do not use, copy or disclose the information in any way nor act in reliance on it and notify the sender immediately.
+Please note that the BBC monitors e-mails sent or received.
+Further communication will signify your consent to this. 
+ 
+ 

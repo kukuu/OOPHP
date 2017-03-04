@@ -1,0 +1,47 @@
+
+0.    USER    	PWD
+XAMPP  xampp    c00ff33c0p
+SQL    root     c00k1e1
+ 
+1. XAMPP homepage http://localhost/xampp/index.php 
+
+2.XAMPP Installation http://www.apachefriends.org/en/xampp-windows.html#1173   documentation 
+
+3.PHPMyAdmin  http://localhost/phpmyadmin/  
+
+5  Database repository c:\xampp\mysql\data\mysqlphp ==>Employee, Department, pet and students Tables
+
+6 Database repository c:\xampp\mysql\data\citylit1 ==> 5 tables
+
+7 PHP files c:\xampp\htdocs
+
+8 PHP files c:\xampp\htdocs\lectures\  note password is set here in php 
+
+9 http://localhost/lectures/one.php
+
+10 http://localhost/lectures/pet.php
+
+11  http://localhost/lectures/pet.php?query=select+*+from+pet_table
+
+12 http://localhost/lectures/students.php
+
+13. http://localhost/lectures/students.php?query=select+*+from+students%0D%0A
+
+14. http://localhost/lectures/department.php
+
+15 http://localhost/lectures/department.php?query=select+*+from+department
+
+16. http://localhost/lectures/employee.php
+
+17. http://localhost/lectures/employee.php?query=select+*+from+employee 
+
+18. blog : http://www.blogger.com/profile/14800490193632788559
+
+
+
+
+
+
+
+
+  

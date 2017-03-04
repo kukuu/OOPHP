@@ -1,0 +1,77 @@
+.REM ***************************************************************************.rem *******      TRIGGERS.RPT - A report designed to strip triggers ***********.rem *******         out of forms. Written 28th January 1991 by      ***********.rem *******                 Ormonde D.C. WATERS                     ***********.REM ***************************************************************************
+
+#DT 1 2 17 19 77 #
+#T 1
+#PAGE 8 56
+
+.REM ***************************************************************************.rem *******                Declare Program Variables                ***********.REM ***************************************************************************
+.DECLARE apptitle a15
+.DECLARE trgblk a15
+.DECLARE trgfld a15
+.DECLARE trgtype a15
+.DECLARE trgsql 999
+.DECLARE sqttext a80
+.DECLARE sqtno 999
+.DECLARE trgmsg a80
+.DECLARE curdate a9
+.DECLARE appid 999
+.DECLARE sqtappid 999
+
+.REM ***************************************************************************.REM          Define Primary SELECT Macro
+.REM
+.REM ***************************************************************************
+.DEFINE seltrig
+        SELECT sysdate,appid,apptitle,trgblk,trgfld,trgtype,trgsql,trgmsg
+        INTO curdate,appid,apptitle,trgblk,trgfld,trgtype,trgsql,trgmsg
+        FROM iapapp,iaptrg
+        WHERE appid=trgappid
+        order by appid,trgsql
+..
+.REM ***************************************************************************.REM 
+.REM           Nested Macro to Select Trigger Statements
+.REM     This is required as ONE trigger may consist of several lines
+.REM
+.REM ***************************************************************************
+.DEFINE seltext
+        SELECT sqttext,sqtno,sqtappid
+        INTO sqttext,sqtno,sqtappid
+        FROM iapsqltxt
+        WHERE sqtno = &trgsql
+        AND sqtappid = &appid
+..
+.DEFINE textbody
+        .PRINT sqttext
+        #N
+.REM *******    The NEW LINE forces the next line of a trigger to be    ********
+.REM *******                 output on a newline                        ********
+..
+
+.REM ***************************************************************************.REM            Define Procedural Macros
+.REM ***************************************************************************
+.DEFINE head
+        DATE :
+        .PRINT curdate
+        #S 2
+        #NC  #CUL TRIGGER DETAILS #  #NC
+        #S 1
+        .body
+..
+.DEFINE body
+        TRIGGER NO.: #NC
+        .PRINT trgsql
+        #NC FORM NAME: #NC
+        .PRINT apptitle
+        #NC BLOCK NAME: #NC
+        .PRINT trgblk
+        #NC TRIGGER TYPE: #NC
+        .PRINT trgtype
+        #NC TRIGGER TEXT: #NC
+        .REPORT seltext textbody
+        #NC TRIGGER MESSAGE: #NC
+        .PRINT trgmsg
+        #NC
+        #S 1
+..
+.REM ***************************************************************************.REM            PROCEDURE SECTION       
+.REM ***************************************************************************
+.REPORT seltrig body head 

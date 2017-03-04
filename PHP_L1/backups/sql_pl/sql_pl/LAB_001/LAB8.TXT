@@ -1,0 +1,446 @@
+/** EPD 4891 LAB8
+    Mr. Oguzhan KOKSAL 9600275
+    MSc TELEMATICS
+    MIDDLESEX UNIVERSITY
+**/
+
+
+--ANSWER 1
+DROP   TABLE MESSAGES ;
+
+CREATE TABLE MESSAGES
+(
+NUMCOL1   NUMBER(9,2),
+NUMCOL2   NUMBER(9,2),
+CHARCOL1  VARCHAR2(60),
+CHARCOL2  VARCHAR2(60),
+DATECOL1  DATE,
+DATECOL2  DATE
+);
+
+
+-- ANSWER 2
+<<OZZIE>>
+DECLARE
+V_BOOL1 BOOLEAN;
+V_BOOL2 BOOLEAN;
+V_CHAR  VARCHAR2(16);        
+V_NUM   NUMBER(2);
+BEGIN
+V_CHAR:='42 is the answer';
+V_NUM:=SUBSTR(V_CHAR,1,2);   
+V_BOOL1:=V_NUM<100;
+V_BOOL2:=NOT V_BOOL1;
+END OZZIE;
+/
+
+
+
+-- ANSWER 3
+--a
+DECLARE
+V_RESULT NUMBER(9,2);
+BEGIN
+:V_RESULT:= &main_var ** &exponent;
+INSERT INTO messages (NUMCOL1) VALUES (V_RESULT);
+END;
+/
+2
+3
+
+PRINT V_RESULT ;
+
+
+--b
+VARIABLE V_RESULT NUMBER;
+BEGIN
+:V_RESULT:= &main_var ** &exponent;
+END;
+/
+2
+3
+
+PRINT V_RESULT ;
+
+
+-- ANSWER 4
+
+DECLARE
+V_RESULT NUMBER(9,2);
+V_MESSAGE CHAR(3);
+BEGIN
+V_RESULT:= &main_var ** &exponent;
+INSERT INTO messages (numcol1) VALUES (V_RESULT);
+EXCEPTION
+WHEN OTHERS THEN V_MESSAGE:= SUBSTR(SQLERRM, 1,60);
+INSERT INTO messages (charcol1)
+VALUES (V_MESSAGE);
+END;
+/
+2
+3
+
+PRINT V_RESULT ;
+
+
+--ANSWER 5
+--@UNIT3_FILE MANAGER
+
+DECLARE
+JOBTYPE emp.job%TYPE;
+BEGIN
+SELECT job INTO JOBTYPE
+FROM emp WHERE job ='&1';
+INSERT INTO messages (charcol1,charcol2)
+VALUES ('&1','Jobtype found once');
+COMMIT;
+EXCEPTION
+WHEN no_data_found THEN
+INSERT INTO messages (charcol1,charcol2)
+VALUES ('&1','Jobtype not found');
+COMMIT;
+WHEN too_many_rows THEN
+INSERT INTO messages (charcol1,charcol2)
+VALUES ('&1','Jobtype found more than once');
+COMMIT;
+END;
+/
+SALESMAN
+
+
+
+--ANSWER 6
+ BEGIN
+ FOR v_count IN 1..10
+ LOOP
+ IF v_count NOT IN (6,8) THEN
+ INSERT INTO messages (numcol1) VALUES
+ (v_count);
+ END IF;
+ END LOOP;
+ COMMIT;
+ END;
+/
+
+
+--ANSWER 7
+DECLARE
+v_ename     emp.ename%TYPE;
+v_hiredate  emp.hiredate%TYPE;
+v_sal       emp.sal%TYPE;
+v_message   CHAR(30);
+BEGIN
+
+SELECT ename, hiredate, sal
+INTO v_ename, v_hiredate, v_sal
+FROM  emp
+WHERE empno = &EMPLOYEE_NO;
+IF    v_sal> 1200 THEN
+      v_message :='Salary more than 1200';
+ELSIF v_ename LIKE '%TO%' THEN
+      v_message :='Name contains a "T"';
+ELSIF TO_CHAR(v_hiredate,'MON') ='DEC' THEN
+      v_message :='December';
+ELSE  v_message:='**None**';
+END IF;            
+INSERT INTO messages (charcol1) VALUES (v_message);
+END;
+/
+7654
+
+SELECT CHARCOL1 "MESSAGE" 
+FROM MESSAGES;
+
+
+
+--ANSWER 8
+BEGIN
+FOR v IN 1..10
+LOOP
+UPDATE messages SET numcol2 = 100
+WHERE numcol1 = v;
+EXIT WHEN SQL%ROWCOUNT <> 1;
+END LOOP;
+END;
+/
+
+SELECT NUMCOL1, NUMCOL2 
+FROM MESSAGES;
+
+
+
+--ANSWER 9
+DROP   TABLE NEWEMP ;
+
+CREATE TABLE NEWEMP
+  (EMPNO NUMBER(4) CONSTRAINT CON_NEWEMP UNIQUE,
+  ENAME VARCHAR2(10),
+  JOB VARCHAR2(10),
+  MGR NUMBER(4),
+  HIREDATE DATE,
+  SAL NUMBER(4),
+  COMM NUMBER(4),
+  DEPTNO NUMBER(2)
+  );
+
+INSERT INTO NEWEMP ( EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO )
+VALUES ('&a','&b','&c','&d','&e','&f','&g','&h')
+
+/
+7369
+SMITH
+CLERK
+7902
+13-Jun-83
+800
+
+20
+
+/
+7499
+ALLEN
+SALESMAN
+7698
+15-Aug-83
+1600
+300
+30
+
+/
+7521
+WARD
+SALESMAN
+7698
+26-Mar-84
+1250
+500
+30
+
+/
+7566
+JONES
+MANAGER
+7839
+31-Oct-83
+2975
+
+20
+
+/
+7654
+MARTIN
+SALESMAN
+7698
+05-Dec-83
+1250
+1400
+30
+
+/
+7698
+BLAKE
+MANAGER
+7839
+11-Jun-84
+2850
+
+30
+
+/
+7782
+CLARK
+MANAGER
+7839
+14-May-84
+2450
+
+10
+
+/
+7788
+SCOTT
+ANALYST
+7566
+05-Mar-84
+3000
+
+20
+
+/
+7839
+KING
+PRESIDENT
+
+09-Jul-84
+5000
+
+10
+
+/
+7844
+TURNER
+SALESMAN
+7698
+04-Jun-84
+1500
+0
+30
+
+/
+7876
+ADAMS
+CLERK
+7788
+04-Jun-84
+1100
+1100
+20
+
+/
+7900
+JAMES
+CLERK
+7698
+23-Jul-83
+950
+950
+30
+
+/
+7902
+FORD
+ANALYST
+7566
+05-Dec-83
+3000
+3000
+20
+
+/
+7934
+MILLER
+CLERK
+7782
+21-Nov-83
+1300
+1300
+10
+
+
+DECLARE
+CURSOR   cur1 IS select sal from newemp
+ORDER BY sal for update of sal;
+v_count NUMBER:= 0; totsal NUMBER(9,2):= 0; v_sal emp.sal%TYPE;
+BEGIN
+SELECT SUM(sal) INTO totsal FROM newemp;
+OPEN cur1;
+WHILE totsal <= 35000
+LOOP
+FETCH cur1 INTO v_sal;
+EXIT WHEN cur1%NOTFOUND;
+
+UPDATE newemp SET sal = sal * 1.1
+WHERE CURRENT OF cur1;
+         totsal:=totsal + v_sal * 0.1;
+         v_count:=v_count + 1;
+         END LOOP;
+         CLOSE cur1;
+         INSERT INTO messages(numcol1,charcol1)
+VALUES (totsal, TO_ChAR(v_count)||'employees updated');
+COMMIT;
+END;
+/
+
+SELECT NUMCOL1, NUMCOL2 
+FROM MESSAGES ;
+
+
+-- ANSWER 10
+--DROP   TABLE MESSAGES 
+--CREATE TABLE MESSAGES
+
+DECLARE
+CURSOR c1 IS select empno, sal, ename
+FROM EMP
+order by sal desc;
+BEGIN
+FOR record1 IN c1
+LOOP
+INSERT INTO messages (numcol1, numcol2, charcol1)
+VALUES (record1.empno,record1.sal, record1.ename);
+EXIT WHEN c1%ROWCOUNT = 5;
+END LOOP;
+COMMIT;
+END;
+/
+
+SELECT NUMCOL1, NUMCOL2, CHARCOL1 
+FROM MESSAGES ;
+
+
+
+--ANSWER 11
+DROP   TABLE NEWEMP ;
+
+CREATE TABLE NEWDEPT
+  (DEPTNO NUMBER(2),
+  DNAME VARCHAR2(10),
+  LOC VARCHAR2(20)
+   );  
+
+INSERT INTO NEWDEPT ( DEPTNO, DNAME, LOC )
+VALUES ('&a','&b','&c')
+
+/
+10
+ACCOUNTING
+NEWYORK
+
+/
+20
+RESEARCH
+DALLAS
+
+/
+30
+SALES
+CHICAGO
+
+/
+40
+OPERATIONS
+BOSTON
+
+
+
+DECLARE
+V_deptno NUMBER:= &1; dept_33 EXCEPTION; BEGIN
+IF v_deptno = 33 THEN RAISE dept_33;
+END IF;
+INSERT INTO newdept (deptno, dname, loc)
+VALUES (&1,'&2','&3');
+EXCEPTION
+WHEN dept_33 THEN
+INSERT INTO messages (charcol1)
+VALUES ('Attempt to create Department 33!');
+END;
+/
+20
+20
+30
+
+
+--ANSWER 12
+DECLARE
+integ_error EXCEPTION;
+PRAGMA EXCEPTION_INIT(integ_error, -2292);
+BEGIN
+DELETE FROM projects;
+EXCEPTION
+WHEN integ_error THEN
+INSERT INTO messages (charcol1)
+VALUES ('Integrity Error');
+END;
+/
+
+PRINT PROJECTS ;

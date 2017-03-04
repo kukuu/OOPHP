@@ -1,0 +1,51 @@
+1. Blog: http://www.blogger.com/profile/14800490193632788559
+
+ 2. iStudio: http://www.goldhawk-college.com/istudio/index-i.html
+
+3. XAMPP
+    		USER    	PWD
+Apache:  	xampp    c00ff33c0p
+MySQL:     root      c00k1e1
+ 
+4. XAMPP homepage http://localhost/xampp/index.php 
+
+5.XAMPP Installation http://www.apachefriends.org/en/xampp-windows.html#1173   documentation 
+
+6 .PHPMyAdmin  http://localhost/phpmyadmin/  
+
+7  Database repository c:\xampp\mysql\data\mysqlphp ==>Employee, Department, pet and students Tables
+
+8 Database repository c:\xampp\mysql\data\citylit1 ==> 5 tables
+
+9 PHP files c:\xampp\htdocs
+
+10 PHP files c:\xampp\htdocs\lectures\  note password is set here in php 
+
+10 http://localhost/lectures/one.php
+
+11 http://localhost/lectures/pet.php
+
+12  http://localhost/lectures/pet.php?query=select+*+from+pet_table
+
+13 http://localhost/lectures/students.php
+
+14 http://localhost/lectures/students.php?query=select+*+from+students%0D%0A
+
+15. http://localhost/lectures/department.php
+
+16 http://localhost/lectures/department.php?query=select+*+from+department
+
+17. http://localhost/lectures/employee.php
+
+18. http://localhost/lectures/employee.php?query=select+*+from+employee 
+
+19. blog : http://www.blogger.com/profile/14800490193632788559
+
+
+
+
+
+
+
+
+  
